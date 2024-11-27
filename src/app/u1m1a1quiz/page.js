@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const questions = [
   {
@@ -107,10 +108,14 @@ export default function Quiz() {
 
   return (
     <div style={{ textAlign: 'center', padding: '20px', maxWidth: '600px', margin: 'auto' }}>
-      <nav>
-        <a href="/" aria-current="page">Home</a>
-        <a href="/python">Modules</a>
-      </nav>
+   <nav>
+      <Link href="/" passHref>
+        <a aria-current="page">Home</a>
+      </Link>
+      <Link href="/python" passHref>
+        <a>Modules</a>
+      </Link>
+    </nav>
 
       {!isQuizStarted ? (
         // Access Code Page

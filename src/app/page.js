@@ -1,13 +1,19 @@
 'use client'
 import Image from "next/image";
 import styles from "./globals.css";
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
     <div >
-    <nav>
-      <a href="/">Home</a>
-      <a href="./python">Modules</a>
+<nav>
+      <Link href="/" passHref>
+        <a>Home</a>
+      </Link>
+      <Link href="/python" passHref>
+        <a>Modules</a>
+      </Link>
     </nav>
     <h1>Welcome!</h1>
 
