@@ -1,42 +1,120 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
   box-sizing: border-box;
-  padding: 0;
+}
+
+body {
   margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: white;
+  text-align: center;
 }
 
-a {
-  color: inherit;
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  background-color: tomato;
+  border-radius: 10px;
+  margin: 10px;
+
+}
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
   text-decoration: none;
+  background-color: tomato;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+nav a {
+  color: #000;
+    background-color: tomato;
+      text-decoration: none;
+
+
+}
+nav a:hover {
+  padding: 0.5rem;
+    background-color: rgba(255, 38, 0, 0.878);
+      text-decoration: none;
+
+
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.btn1 {
+  background-color: tomato;
+  border: 4px;
+  width: 100px;
+  height: 50px;
+  color: black;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  width: 110px;
+  height: 55px;
+}
+
+.btn2 {
+    height: 150px;
+  width: 20%;
+  border-radius: 20px;
+  border: 0px;
+  background-color: tomato;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  font-family: 'Lucida Console', Lucida, monospace;
+  font-size: xx-large;
+
+}
+
+.btn2:hover {
+    background-color: rgb(247, 127, 105);
+  cursor: pointer;
+}
+
+
+.btn3 {
+    height: 50px;
+  width: 20%;
+  border-radius: 20px;
+  border: 0px;
+  background-color: tomato;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 10px;
+  font-family: 'Lucida Console', Lucida, monospace;
+  font-size: x-large;
+
+}
+
+.btn3:hover {
+    background-color: rgb(247, 127, 105);
+  cursor: pointer;
+}
+
+
+
+button {
+  background-color: tomato;
+  border-radius: 5px;
+  height: auto;
+  width: 100px;
+  
 }
